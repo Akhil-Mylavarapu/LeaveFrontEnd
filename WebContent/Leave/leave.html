@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<body data-ng-app="myApp">
+	
+	<div class="container">
+	<div>
+	<form role="form" class="form-horizontal" action="" data-ng-submit="submit()" data-ng-controller="leavectrl">
+	<h2> Apply Leave</h2>
+	<input type="hidden" data-ng-model="id" >
+	
+	<div class="form-group">
+                    <label for="empid" class="col-sm-3 control-label">Emp id</label>
+                    <div class="col-sm-9">
+		 <input type="text" name="empid" data-ng-model="empid" class="form-control" autofocus required=""> <br>
+		</div></div>
+	       <div class="form-group">
+                    <label for="name" class="col-sm-3 control-label">Name</label>
+                    <div class="col-sm-9">
+		 <input type="text" name="name" data-ng-model="name" class="form-control" autofocus required=""> <br>
+		</div></div>
+		
+	 <div class="form-group">
+                    <label for="dept" class="col-sm-3 control-label">Dept</label>
+                    <div class="col-sm-9">
+		 <input type="text" name="dept" data-ng-model="dept" class="form-control" autofocus required=""> <br>
+		</div></div>
+		
+		      <div class="form-group">
+		           <label for="startdate" class="col-sm-3 control-label">start date</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="startdate" required="" data-ng-model="startdate" class="form-control">
+                    </div></div>
+                    
+                    <div class="form-group">
+		           <label for="enddate" class="col-sm-3 control-label">end date</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="enddate" required="" data-ng-model="enddate" class="form-control">
+                    </div></div>
+		
+		 <div class="form-group">
+                    <label for="reason" class="col-sm-3 control-label">reason</label>
+                    <div class="col-sm-9">
+		<textarea draggable="false" rows="10" name="reason" data-ng-model="reason" class="form-control" required=""></textarea>
+		</div></div>
+		 <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+			<button type="submit" class="btn btn-primary">Save Event</button>
+			</div></div>
+	</form>
+	</div>
+	</div>
+</body>
+</html>
